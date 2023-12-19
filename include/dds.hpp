@@ -395,7 +395,7 @@ namespace dds {
                 image->dimension = header->height > 1 ? Texture2D : Texture1D;
             }
 
-            arrayLayers = 1u;
+            image->arraySize = 1u;
         }
 
         const auto blockSizeBytes = getBlockSize(image->format);
